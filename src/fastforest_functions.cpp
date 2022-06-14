@@ -115,7 +115,7 @@ namespace {
         correctIndices(ff.rightIndices_.begin() + nPreviousNodes, ff.rightIndices_.end(), nodeIndices, leafIndices);
         correctIndices(ff.leftIndices_.begin() + nPreviousNodes, ff.leftIndices_.end(), nodeIndices, leafIndices);
 
-        if (nPreviousNodes != ff.cutValues_.size()) {
+        if (nPreviousNodes != (int)ff.cutValues_.size()) {
             ff.treeNumbers_.push_back(ff.rootIndices_.size() + treesSkipped);
             ff.rootIndices_.push_back(nPreviousNodes);
         } else {

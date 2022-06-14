@@ -1,4 +1,4 @@
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -pedantic-errors")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -pedantic-errors")
 
 if(EXPERIMENTAL_TMVA_SUPPORT)
     file(GLOB_RECURSE SOURCE_FILES "*.cpp")

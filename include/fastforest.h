@@ -37,12 +37,13 @@ SOFTWARE.
 
 namespace fastforest {
 
+    // FIXME: [20220613] change float to double!
     // The floating point number type that will be used to accept features and store cut values
-    typedef float FeatureType;
+    typedef double FeatureType;
     // Tue floating point number type that the individual trees return their responses in
-    typedef float TreeResponseType;
+    typedef double TreeResponseType;
     // The floating point number type that is used to sum the individual tree responses
-    typedef float TreeEnsembleResponseType;
+    typedef double TreeEnsembleResponseType;
     // This integer type stores the indices of the feature employed in each cut.
     // Set to `unsigned char` for most compact fastforest ofjects if you have less than 256 features.
     typedef unsigned int CutIndexType;
